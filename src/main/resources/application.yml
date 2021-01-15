@@ -1,0 +1,13 @@
+server:
+  port: 8090
+  servlet:
+    context-path: /challenge
+
+spring:
+  application:
+    name: challenge-meli
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://${CHALLENGE_MELI_DB:localhost}:3330/challengemelidb
+    username: challenge
+    password: challenge2020++
