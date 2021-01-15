@@ -8,6 +8,6 @@ spring:
     name: challenge-meli
   datasource:
     driverClassName: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://${CHALLENGE_MELI_DB:localhost}:3330/challengemelidb
-    username: challenge
-    password: challenge2020++
+    url: jdbc:mysql://bef69021497056:e8f05ca8@us-cdbr-east-03.cleardb.com/heroku_160131ab73a8533
+    username: bef69021497056
+    password: e8f05ca8
