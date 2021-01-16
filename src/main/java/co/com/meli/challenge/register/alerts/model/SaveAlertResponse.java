@@ -9,6 +9,6 @@ import lombok.Setter;
 @NoArgsConstructor
 public class SaveAlertResponse {
 
-  private String status;
+  private Integer status;
   private String description;
 }
