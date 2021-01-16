@@ -1,6 +1,6 @@
 package co.com.meli.challenge.register.alerts.controller;
 
-import co.com.meli.challenge.register.alerts.model.AlertDto;
+import co.com.meli.challenge.register.alerts.model.SaveAlertRequest;
 import co.com.meli.challenge.register.alerts.model.SaveAlertResponse;
 import co.com.meli.challenge.register.alerts.service.AlertService;
 import lombok.RequiredArgsConstructor;
@@ -22,8 +22,8 @@ public class AlertsController {
 
   private final AlertService service;
 
-  @PostMapping("/save")
-  public ResponseEntity<SaveAlertResponse> handler(@RequestBody AlertDto request) {
+  @PostMapping("/create")
+  public ResponseEntity<SaveAlertResponse> createAlert(@RequestBody SaveAlertRequest request) {
     LOGGER.info("ServerName: {}", request.getServerName());
     SaveAlertResponse response = service.createAlert(request);
     return new ResponseEntity<>(response, HttpStatus.OK);
