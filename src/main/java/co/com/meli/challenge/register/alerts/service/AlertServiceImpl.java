@@ -32,7 +32,7 @@ public class AlertServiceImpl implements AlertService {
     alertServerDto.setServerName(saveAlertRequest.getServerName());
     alertServerDto.setServerType(saveAlertRequest.getServerType());
 
-    String result = repository.create(alertServerDto);
+    final String result = repository.create(alertServerDto);
     if (Status.CREATED.toString().equals(result)) {
       response.setDescription(HttpStatus.OK.name());
       response.setStatus(HttpStatus.OK.value());
