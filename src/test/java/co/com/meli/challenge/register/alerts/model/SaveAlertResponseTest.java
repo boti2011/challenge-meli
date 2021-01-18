@@ -26,7 +26,7 @@ public class SaveAlertResponseTest {
   }
 
   @Test
-  public void createSaveAlertRequestWithDataBySetters() {
+  public void createSaveAlertResponseWithDataBySetters() {
     // setup
     this.saveAlertResponse.setDescription("OK");
     this.saveAlertResponse.setStatus(200);
