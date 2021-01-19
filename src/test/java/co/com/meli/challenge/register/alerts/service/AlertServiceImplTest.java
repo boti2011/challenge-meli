@@ -22,7 +22,7 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 public class AlertServiceImplTest {
 
   @TestConfiguration
-  static class EmployeeServiceImplTestContextConfiguration {
+  static class AlertServiceImplTestContextConfiguration {
 
     @Autowired private AlertRepository repository;
 
