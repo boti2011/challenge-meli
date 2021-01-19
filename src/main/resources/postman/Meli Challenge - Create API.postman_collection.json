@@ -1,0 +1,40 @@
+{
+	"info": {
+		"_postman_id": "d9d84197-894e-429e-bb48-abd11c28ff58",
+		"name": "Meli Challenge - Create API",
+		"description": "API to register alerts of Meli Servers",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Register Alert",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"server\":\"SERVER_1\",\n    \"description\":\"Alert 2\",\n    \"created_at\":\"16-01-2021 16:48:00\",\n    \"server_type\":\"TYPE_1\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8091/challenge/alerts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8091",
+					"path": [
+						"challenge",
+						"alerts"
+					]
+				},
+				"description": "Request to register a information alert of Meli servers"
+			},
+			"response": []
+		}
+	]
+}
