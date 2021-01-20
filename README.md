@@ -1,4 +1,20 @@
 # MELI CHALLENGE
+
+# Arquitectura de la solución
+
+![Plus example](https://challengemelibcsb.000webhostapp.com/assets/evidence/Architecture.png)
+
+### Tecnologías usadas
+
+- Java 1.8
+- Spring Boot
+- Gradle 6.7.1
+- Heroku
+- ClearDB (MySQL 5.5.62)
+- Swagger
+- Angular 10
+- Mockito
+
 # API DE REGISTRO DE ALERTAS DE SERVIDORES
 
 Esta es un API Restfull que permite registrar las alertas de los servidores de MeLi.
@@ -41,4 +57,10 @@ gradle bootrun
 Puede realizar el consumo a través de postman, descargando el siguiente [archivo](https://github.com/boti2011/challenge-meli/tree/master/src/main/resources/postman)
 ### NOTA
 
-Para consumir el API desplegado en HEROKU, cambiar [http://localhost:8091/]() por [http://challenge-meli-query.herokuapp.com/]()
+Para consumir el API desplegado en HEROKU, cambiar [http://localhost:8091/]() por [http://challenge-dev.herokuapp.com/]()
+
+## Documentación del API
+
+Se publica en el siguiente link la especificación de los servicios expuestos por medio de SWAGGER
+
+- http://challenge-dev.herokuapp.com/challenge/swagger-ui.html#/
